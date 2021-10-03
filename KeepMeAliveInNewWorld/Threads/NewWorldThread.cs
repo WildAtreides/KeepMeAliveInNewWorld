@@ -85,14 +85,10 @@ namespace KeepMeAliveInNewWorld.Threads
 
         private void MainWait()
         {
-            int minutes = 1;
-            //int minutes = GetMinutes(GetRandomValueInRange(4, 13));
+            int minutes = GetMinutes(GetRandomValueInRange(4, 13));
             int seconds = GetSeconds(GetRandomValueInRange(2, 59));
 
-            Console.WriteLine($"{GetCurrentTime()} - Waiting for {minutes}min and {seconds}sec");
-            //Thread.Sleep(minutes + seconds);
-
-
+            Console.WriteLine($"{GetCurrentTime()} - Waiting...see timer below");
             GetWaitTimer(minutes + seconds);
         }
 
@@ -198,7 +194,7 @@ namespace KeepMeAliveInNewWorld.Threads
 
         private int GetRandomMovementTime()
         {
-            return GetRandomValueInRange(1, 9);
+            return GetRandomValueInRange(1, 4);
         }
 
         private WindowsInput.Native.VirtualKeyCode GetRandomDirectionKey()

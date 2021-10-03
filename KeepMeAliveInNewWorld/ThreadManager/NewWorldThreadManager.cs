@@ -24,6 +24,11 @@ namespace KeepMeAliveInNewWorld.ThreadManagerStuff
         {
             StringBuilder messageBuilder = new StringBuilder();
             messageBuilder.AppendLine("Hello! Are you trying to secure your space on a New World [or some other MMO] server?");
+            Thread.Sleep(300);
+            messageBuilder.AppendLine("If so, please press one of the following keys.");
+            Thread.Sleep(300);
+            messageBuilder.AppendLine("If you choose 'yes', then you will have 30 seconds to switch focus into the game (click in the game)");
+            Thread.Sleep(300);
             messageBuilder.AppendLine("'y' = yes");
             messageBuilder.AppendLine("'n' = no");
             Console.WriteLine(messageBuilder.ToString());
@@ -53,13 +58,7 @@ namespace KeepMeAliveInNewWorld.ThreadManagerStuff
         public override void RunExit()
         {
             Console.WriteLine("You have awoken my restless slumber.");
-            Thread.Sleep(300);
-            Console.WriteLine("...");
-            Thread.Sleep(300);
-            Console.WriteLine("...");
-            Thread.Sleep(300);
             Console.WriteLine("You are now in control.");
-            Thread.Sleep(500);
         }
     }
 }
