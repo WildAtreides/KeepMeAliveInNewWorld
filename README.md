@@ -14,7 +14,8 @@ It will produce:
 
 ### Directions ###
 
-1. Run the .exe
-2. Press 'y'
-3. Click inside of New World
-4. Sit back for however long you want and stay in-game
+1. Download 'AFKSimulator.zip' (This contains the runnable (from command line) .exe and source libraries)
+2. Run the .exe
+3. Press 'y'
+4. Click inside of New World
+5. Sit back for however long you want and stay in-game
