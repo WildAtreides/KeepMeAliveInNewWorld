@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Text;
+using System.Threading;
+using KeepMeAliveInNewWorld.ThreadManagerStuff;
+using KeepMeAliveInNewWorld.Threads;
 
 namespace KeepMeAliveInNewWorld
 {
@@ -6,7 +10,8 @@ namespace KeepMeAliveInNewWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            NewWorldThreadManager threadManager = new NewWorldThreadManager();
+            threadManager.Run();
         }
     }
 }
